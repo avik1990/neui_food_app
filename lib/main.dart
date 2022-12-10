@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neui_food_app/widgets/textview_bold.dart';
 
 void main() {
   runApp(const MyApp());
@@ -95,8 +96,10 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
+            const TextviewBold(text:
               'You have pushed the button this many times:',
+              color: Colors.yellow,
+              size: 35,
             ),
             Text(
               '$_counter',
